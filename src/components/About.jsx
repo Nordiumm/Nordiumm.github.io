@@ -20,7 +20,7 @@ function About() {
 
 
                 <Tag
-                    icon={transIcon}
+                    icon={pronounsIcon}
                     className="pronouns"
                 >
                     She/Her
