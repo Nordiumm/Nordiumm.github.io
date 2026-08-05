@@ -1,0 +1,455 @@
+.tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin:15px 0;
+
+}
+
+
+
+.tag {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+
+    padding:
+        6px 12px;
+
+
+    border-radius:
+        999px;
+
+
+    border:
+        1px solid #30363d;
+
+
+    font-size:
+        13px;
+
+
+    transition:
+        0.2s ease;
+
+}
+
+
+
+.tag img {
+
+    width:16px;
+
+    height:16px;
+
+}
+
+
+
+.tag:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+.java {
+    background: #2d1b0e;
+    color: #f89820;
+    border-color: #f89820;
+}
+
+.python {
+    background: #1e3a5f;
+    color: #ffd343;
+    border-color: #3776ab;
+}
+
+.javascript {
+    background: #3b3510;
+    color: #f7df1e;
+    border-color: #f7df1e;
+}
+
+.typescript {
+    background: #12345b;
+    color: #3178c6;
+    border-color: #3178c6;
+}
+
+.html {
+    background: #4a2015;
+    color: #e34f26;
+    border-color: #e34f26;
+}
+
+.css {
+    background: #132f52;
+    color: #1572b6;
+    border-color: #1572b6;
+}
+
+.rust {
+    background: #3a2a1f;
+    color: #dea584;
+    border-color: #dea584;
+}
+
+.php {
+    background: #23263f;
+    color: #8892bf;
+    border-color: #8892bf;
+}
+
+.kotlin {
+    background: #2b1842;
+    color: #c77dff;
+    border-color: #a855f7;
+}
+
+.csharp {
+    background: #231a36;
+    color: #9b59b6;
+    border-color: #9b59b6;
+}
+
+.c {
+    background: #1b2433;
+    color: #5c9ded;
+    border-color: #5c9ded;
+}
+
+.cpp {
+    background: #1d2942;
+    color: #659ad2;
+    border-color: #659ad2;
+}
+
+.fabric {
+    background: #143d2b;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.forge {
+    background: #4d1f24;
+    color: #ff7b72;
+    border-color: #da3633;
+}
+
+.neoforge {
+    background: #4a2d12;
+    color: #f2cc60;
+    border-color: #d29922;
+}
+
+.minecraft {
+    background: #1b3a1b;
+    color: #8bd450;
+    border-color: #4caf50;
+}
+
+.client-side {
+    background: #0c3d47;
+    color: #79c0ff;
+    border-color: #1f6feb;
+}
+
+.server-side {
+    background: #33250b;
+    color: #f5c542;
+    border-color: #d29922;
+}
+
+.both {
+    background: #35194f;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.open-source {
+    background: #21262d;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.mod {
+    background: #35194f;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.plugin {
+    background: #143d2b;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.api {
+    background: #132f52;
+    color: #79c0ff;
+    border-color: #388bfd;
+}
+
+.bot {
+    background: #3b3210;
+    color: #f5c542;
+    border-color: #d29922;
+}
+
+.script {
+    background: #21262d;
+    color: #c9d1d9;
+    border-color: #6e7681;
+}
+
+.private {
+    background: #3d1f2b;
+    color: #ff7b72;
+    border-color: #da3633;
+}
+
+.library {
+    background: #1f2d3d;
+    color: #79c0ff;
+    border-color: #1f6feb;
+}
+
+.tool {
+    background: #2d1b0e;
+    color: #f2cc60;
+    border-color: #d29922;
+}
+
+.website {
+    background: #132f52;
+    color: #58a6ff;
+    border-color: #388bfd;
+}
+
+.application {
+    background: #16302b;
+    color: #56d364;
+    border-color: #2ea043;
+}
+
+.flask {
+    background: #21262d;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.active {
+    background: #143d2b;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.development {
+    background: #13294b;
+    color: #79c0ff;
+    border-color: #1f6feb;
+}
+
+.planned {
+    background: #3b3210;
+    color: #f5c542;
+    border-color: #d29922;
+}
+
+.archived {
+    background: #21262d;
+    color: #8b949e;
+    border-color: #6e7681;
+}
+
+.completed {
+    background: #35194f;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.git {
+    background: #2b1b12;
+    color: #f05032;
+    border-color: #f05032;
+}
+
+.github {
+    background: #21262d;
+    color: #ffffff;
+    border-color: #6e7681;
+}
+
+.gradle {
+    background: #263b5a;
+    color: #1495b3;
+    border-color: #1b75bb;
+}
+
+.intellij {
+    background: #2b1b4d;
+    color: #ff66cc;
+    border-color: #ff66cc;
+}
+
+.vscode {
+    background: #102a43;
+    color: #007acc;
+    border-color: #007acc;
+}
+
+.pronouns {
+    background: #2d1b4d;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.location {
+    background: #132f52;
+    color: #79c0ff;
+    border-color: #388bfd;
+}
+
+.status {
+    background: #143d2b;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.age {
+    background: #21262d;
+    color: #c9d1d9;
+    border-color: #6e7681;
+}
+
+.windows {
+    background: #102a43;
+    color: #00a4ef;
+    border-color: #0078d4;
+}
+
+.linux {
+    background: #3b3210;
+    color: #f5c542;
+    border-color: #f5c542;
+}
+
+.mac {
+    background: #21262d;
+    color: #e6edf3;
+    border-color: #8b949e;
+}
+
+.android {
+    background: #143d2b;
+    color: #3ddc84;
+    border-color: #3ddc84;
+}
+
+.web {
+    background: #132f52;
+    color: #58a6ff;
+    border-color: #388bfd;
+}
+
+.desktop {
+    background: #35194f;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.prototype {
+    background: #21262d;
+    color: #8b949e;
+    border-color: #6e7681;
+}
+
+.alpha {
+    background: #3d1f2b;
+    color: #ff7b72;
+    border-color: #da3633;
+}
+
+.beta {
+    background: #3b3210;
+    color: #f5c542;
+    border-color: #d29922;
+}
+
+.release {
+    background: #132f52;
+    color: #79c0ff;
+    border-color: #388bfd;
+}
+
+.stable {
+    background: #143d2b;
+    color: #7ee787;
+    border-color: #238636;
+}
+
+.experimental {
+    background: #35194f;
+    color: #d2a8ff;
+    border-color: #a855f7;
+}
+
+.modrinth {
+    background: #143d2b;
+    color: #00e676;
+    border-color: #00e676;
+}
+
+.curseforge {
+    background: #3b3210;
+    color: #f16436;
+    border-color: #f16436;
+}
+
+.react {
+    background: #102a43;
+    color: #61dafb;
+    border-color: #61dafb;
+}
+
+.lua {
+    background: #1e3a5f;
+    color: #5dade2;
+    border-color: #5dade2;
+}
+
+.luau {
+    background: #162447;
+    color: #00a2ff;
+    border-color: #00a2ff;
+}
+
+.trans {
+
+    background:
+        linear-gradient(
+            135deg,
+            #5BCEFA 0%,
+            #F5A9B8 25%,
+            #FFFFFF 50%,
+            #F5A9B8 75%,
+            #5BCEFA 100%
+        );
+
+    color:
+        #1a1a1a;
+
+    font-weight:
+        600;
+}

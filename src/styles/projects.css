@@ -1,0 +1,268 @@
+.project {
+
+    background: #161b22;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #30363d;
+
+    transition:
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+
+.project:hover {
+
+    box-shadow:
+        0 0 25px rgba(170, 59, 255, 0.35);
+
+    border-color:
+        rgba(170, 59, 255, 0.6);
+
+}
+
+
+
+/* Project title + status */
+
+.project-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.project-title h3 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+}
+
+
+
+/* Status tag next to title */
+
+.project-title .tag {
+
+    font-size: 12px;
+
+    padding: 4px 10px;
+
+}
+
+
+
+/* Project description */
+
+.project p {
+
+    color: #c9d1d9;
+
+}
+
+
+
+/* Technology tags */
+
+.project .tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 15px 0;
+
+}
+
+.project-slider {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+    
+    gap:20px;
+
+}
+
+
+.project-slider .project {
+
+    flex:1;
+
+    
+
+}
+
+
+.project-arrow {
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    border:1px solid #30363d;
+
+    background:#161b22;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:0.2s ease;
+
+}
+
+
+.project-arrow:hover {
+
+    background:#aa3bff;
+
+    box-shadow:
+        0 0 20px rgba(170,59,255,0.5);
+
+}
+
+.project-dots {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:20px;
+
+}
+
+
+.dot {
+
+    width:10px;
+
+    height:10px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    border:1px solid #8b949e;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.dot:hover {
+
+    border-color:#aa3bff;
+
+    box-shadow:
+        0 0 10px rgba(170,59,255,0.5);
+
+}
+
+
+.dot.active {
+
+    background:#aa3bff;
+
+    border-color:#aa3bff;
+
+    box-shadow:
+        0 0 12px rgba(170,59,255,0.7);
+
+}
+
+/* Links */
+
+.project-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+.project-links a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 0;
+
+    background: #21262d;
+
+    border: 1px solid #30363d;
+
+    border-radius: 8px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+
+.project-links a:hover {
+
+    background:
+        rgba(170, 59, 255, 0.25);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(170, 59, 255, 0.35);
+
+}
+
+
+
+.project-links img {
+
+    width: 20px;
+
+    height: 20px;
+
+    object-fit: contain;
+
+}

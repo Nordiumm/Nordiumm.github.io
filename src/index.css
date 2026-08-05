@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("./assets/fonts/Minecraft.ttf") format("truetype");
+}
+
+
+:root {
+
+    --bg: #0b0b12;
+    --surface: #14141f;
+
+    --text: #f5f5f5;
+    --text-muted: #a1a1aa;
+
+    --accent: #aa3bff;
+
+    --border:
+        rgba(255,255,255,0.1);
+
+
+    --font-main:
+        "Montserrat",
+        sans-serif;
+
+    --font-code:
+        "JetBrains Mono",
+        monospace;
+
+    --font-minecraft:
+        "Minecraft",
+        monospace;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(168,85,247,0.15),
+            transparent 40%
+        ),
+        var(--bg);
+
+
+    background-size: 120% 120%;
+
+    animation:
+        backgroundMove 10s ease infinite alternate;
+
+
+    color: var(--text);
+
+    font-family: var(--font-main);
+
+    line-height: 1.6;
+
+}
+
+
+@keyframes backgroundMove {
+
+    from {
+        background-position: top center;
+    }
+
+    to {
+        background-position: bottom center;
+    }
+
+}
+
+
+#root {
+
+    width: 100%;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+p {
+
+    color: #c9d1d9;
+
+}
+
+
+h1,
+h2,
+h3 {
+
+    margin-top: 0;
+
+}
+
+.minecraft-font {
+    font-family: var(--font-minecraft);
+    color: #8bd450;
+    text-shadow: 0 0 10px rgba(139, 212, 80, 0.5);
+}
+
+.developer-font {
+    font-family: var(--font-main);
+    color: #d699ff;
+    text-shadow: 0 0 10px rgba(214, 153, 255, 0.5);
+}
+
+.code-font {
+    font-family: var(--font-code);
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}

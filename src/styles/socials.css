@@ -1,0 +1,112 @@
+.social-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 20px;
+
+    justify-content:center;
+
+}
+
+
+
+.social-card {
+
+    background:
+        #161b22;
+
+    border:
+        1px solid #30363d;
+
+    border-radius:
+        16px;
+
+    padding:
+        20px;
+
+    text-align:center;
+    
+    text-decoration:
+        none;
+
+    color:
+        #c9d1d9;
+
+    transition:
+        0.3s ease;
+
+}
+
+
+
+.social-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #aa3bff;
+
+    box-shadow:
+        0 0 25px rgba(170,59,255,0.25);
+
+}
+
+
+
+.social-header {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    justify-content:center;
+
+}
+
+
+
+.social-header img {
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+}
+
+
+
+.social-header h3 {
+
+    margin:0;
+
+    color:white;
+
+}
+
+
+
+.social-header span {
+
+    color:#8b949e;
+
+    font-size:14px;
+
+}
+
+
+
+.social-link {
+
+    margin-top:15px;
+
+    color:#aa3bff;
+
+}
