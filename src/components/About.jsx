@@ -2,7 +2,6 @@ import Tag from "./Tag";
 
 import pronounsIcon from "../assets/icons/tags/pronouns.svg";
 import locationIcon from "../assets/icons/tags/location.svg";
-import transIcon from "../assets/icons/tags/trans.svg"
 
 
 function About() {
