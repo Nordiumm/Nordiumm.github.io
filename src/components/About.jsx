@@ -28,14 +28,6 @@ function About() {
 
 
                 <Tag
-                    className="trans"
-                >
-                    Transgirl
-                </Tag>
-
-
-
-                <Tag
                     icon={locationIcon}
                     className="location"
                 >
