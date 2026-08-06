@@ -38,8 +38,9 @@ function App() {
 
                 <Socials />
 
-                <Footer />
             </main>
+
+        <Footer />
         </>
     );
 }
