@@ -9,7 +9,7 @@ function Footer() {
             </p>
 
             <p>
-                Built with React + Vite
+                Thanks for visiting 💜
             </p>
 
         </footer>
