@@ -1,16 +1,45 @@
-# React + Vite
+# Jessie's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio.
 
-Currently, two official plugins are available:
+This website is a showcase of my programming projects, skills, and experience with software development. It was built to document my journey as a developer and highlight projects I have created.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+I am a developer interested in:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Minecraft mod development
+- Software projects
+- Web development
+- Learning how systems and technology work
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio is built using:
+
+- React
+- Vite
+- JavaScript
+- CSS
+- GitHub Actions
+
+## Features
+
+- Component-based React architecture
+- Responsive design
+- Project showcase
+- Technology tags
+- GitHub integration
+- Automated deployment
+
+## Credits
+
+Some icons, logos, fonts, and third-party assets used on this website belong to their respective owners and are used according to their licenses or brand guidelines.
+
+## License
+
+This project is source-available for viewing purposes.
+
+The code, design, layout, and original content may not be copied, redistributed, modified, or reused without permission.
+
+See the `LICENSE` file for more information.

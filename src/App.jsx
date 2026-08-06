@@ -7,6 +7,7 @@ import "./styles/projects.css";
 import "./styles/stats.css";
 import "./styles/socials.css"
 import "./styles/github.css";
+import "./styles/footer.css"
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -15,6 +16,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 import GithubStats from "./components/GithubStats";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
                 <Socials />
 
             </main>
+
+            <Footer />
         </>
     );
 }
