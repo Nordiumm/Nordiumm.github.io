@@ -1,46 +1,170 @@
+/* =========================
+   PROJECT CARD
+========================= */
+
 .project {
 
-    background: #161b22;
+    position: relative;
+    overflow: hidden;
 
-    padding: 25px;
+    background:
+        linear-gradient(
+            145deg,
+            #161b22,
+            #0d1117
+        );
 
-    border-radius: 12px;
+    padding:
+        25px;
 
-    margin-bottom: 20px;
+    border-radius:
+        16px;
 
-    border: 1px solid #30363d;
+    border:
+        1px solid #30363d;
 
     transition:
+        transform 0.3s ease,
         box-shadow 0.3s ease,
         border-color 0.3s ease;
 
 }
 
 
+.project::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(170,59,255,0.15),
+            transparent 65%
+        );
+
+    opacity:
+        0;
+
+    transition:
+        opacity 0.3s ease;
+
+    pointer-events:
+        none;
+
+}
+
 
 .project:hover {
 
-    box-shadow:
-        0 0 25px rgba(170, 59, 255, 0.35);
+    transform:
+        translateY(-8px);
 
     border-color:
-        rgba(170, 59, 255, 0.6);
+        rgba(170,59,255,0.8);
+
+    box-shadow:
+        0 15px 40px rgba(170,59,255,0.25);
+
+}
+
+
+.project:hover::before {
+
+    opacity:
+        1;
+
+}
+
+
+/* Keep content above glow */
+
+.project > * {
+
+    position:
+        relative;
+
+    z-index:
+        1;
 
 }
 
 
 
-/* Project title + status */
+/* =========================
+   PROJECT MEDIA
+========================= */
+
+
+.project-media {
+
+    width:
+        100%;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+
+.project-image,
+.project-video {
+
+    width:
+        100%;
+
+    height:
+        180px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid #30363d;
+
+    object-fit:
+        cover;
+
+}
+
+
+
+.project-video {
+
+    display:
+        block;
+
+    background:
+        #000;
+
+}
+
+
+
+/* =========================
+   PROJECT TITLE
+========================= */
+
 
 .project-title {
 
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 10px;
+    gap:
+        10px;
 
-    flex-wrap: wrap;
+    flex-wrap:
+        wrap;
 
 }
 
@@ -48,131 +172,263 @@
 
 .project-title h3 {
 
-    margin: 0;
+    margin:
+        0;
 
-    font-size: 24px;
+    font-size:
+        24px;
 
-}
-
-
-
-/* Status tag next to title */
-
-.project-title .tag {
-
-    font-size: 12px;
-
-    padding: 4px 10px;
+    color:
+        white;
 
 }
 
 
 
-/* Project description */
+/* =========================
+   STATUS
+========================= */
+
+
+.status {
+
+    font-size:
+        12px;
+
+    padding:
+        4px 10px;
+
+    border-radius:
+        999px;
+
+    background:
+        #21262d;
+
+    border:
+        1px solid #30363d;
+
+}
+
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
 
 .project p {
 
-    color: #c9d1d9;
+    color:
+        #c9d1d9;
+
+    line-height:
+        1.6;
 
 }
 
 
 
-/* Technology tags */
+/* =========================
+   PROJECT META
+========================= */
+
+
+.project-meta {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+    margin-top:
+        15px;
+
+    color:
+        #8b949e;
+
+    font-size:
+        14px;
+
+}
+
+
+
+/* =========================
+   TECHNOLOGY TAGS
+========================= */
+
 
 .project .tags {
 
-    display: flex;
+    display:
+        flex;
 
-    flex-wrap: wrap;
+    flex-wrap:
+        wrap;
 
-    gap: 8px;
+    gap:
+        8px;
 
-    margin: 15px 0;
+    margin:
+        15px 0;
 
 }
+
+
+
+/* =========================
+   SLIDER
+========================= */
+
 
 .project-slider {
 
-    display:flex;
+    display:
+        flex;
 
-    align-items:center;
+    align-items:
+        center;
 
-    justify-content:center;
-    
-    gap:20px;
+    justify-content:
+        center;
+
+    gap:
+        20px;
 
 }
+
 
 
 .project-slider .project {
 
-    flex:1;
-
-    
+    flex:
+        1;
 
 }
+
+
+
+/* =========================
+   SLIDER ARROWS
+========================= */
 
 
 .project-arrow {
 
-    width:45px;
-    height:45px;
+    width:
+        45px;
 
-    border-radius:50%;
+    height:
+        45px;
 
-    border:1px solid #30363d;
 
-    background:#161b22;
+    border-radius:
+        50%;
 
-    color:white;
 
-    font-size:22px;
+    border:
+        1px solid #30363d;
 
-    cursor:pointer;
 
-    transition:0.2s ease;
+    background:
+        #161b22;
+
+
+    color:
+        white;
+
+
+    font-size:
+        22px;
+
+
+    cursor:
+        pointer;
+
+
+    transition:
+        0.25s ease;
 
 }
 
 
+
 .project-arrow:hover {
 
-    background:#aa3bff;
+    background:
+        #aa3bff;
+
+
+    transform:
+        scale(1.1);
+
 
     box-shadow:
         0 0 20px rgba(170,59,255,0.5);
 
 }
 
+
+
+/* =========================
+   SLIDER DOTS
+========================= */
+
+
 .project-dots {
 
-    display:flex;
+    display:
+        flex;
 
-    justify-content:center;
 
-    gap:8px;
+    justify-content:
+        center;
 
-    margin-top:20px;
+
+    gap:
+        8px;
+
+
+    margin-top:
+        20px;
 
 }
 
 
+
 .dot {
 
-    width:10px;
+    width:
+        10px;
 
-    height:10px;
 
-    padding:0;
+    height:
+        10px;
 
-    border-radius:50%;
 
-    border:1px solid #8b949e;
+    padding:
+        0;
 
-    background:transparent;
 
-    cursor:pointer;
+    border-radius:
+        50%;
+
+
+    border:
+        1px solid #8b949e;
+
+
+    background:
+        transparent;
+
+
+    cursor:
+        pointer;
+
 
     transition:
         0.3s ease;
@@ -180,9 +436,12 @@
 }
 
 
+
 .dot:hover {
 
-    border-color:#aa3bff;
+    border-color:
+        #aa3bff;
+
 
     box-shadow:
         0 0 10px rgba(170,59,255,0.5);
@@ -190,48 +449,92 @@
 }
 
 
+
 .dot.active {
 
-    background:#aa3bff;
+    background:
+        #aa3bff;
 
-    border-color:#aa3bff;
+
+    border-color:
+        #aa3bff;
+
 
     box-shadow:
         0 0 12px rgba(170,59,255,0.7);
 
 }
 
-/* Links */
+
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
 
 .project-links {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+
+    display:
+        flex;
+
+
+    flex-wrap:
+        wrap;
+
+
+    gap:
+        10px;
+
+
+    margin-top:
+        20px;
+
 }
 
 
 
 .project-links a {
 
-    width: 42px;
+    position:
+        relative;
 
-    height: 42px;
 
-    display: inline-flex;
+    width:
+        42px;
 
-    justify-content: center;
 
-    align-items: center;
+    height:
+        42px;
 
-    padding: 0;
 
-    background: #21262d;
 
-    border: 1px solid #30363d;
+    display:
+        inline-flex;
 
-    border-radius: 8px;
+
+    justify-content:
+        center;
+
+
+    align-items:
+        center;
+
+
+
+    background:
+        #21262d;
+
+
+
+    border:
+        1px solid #30363d;
+
+
+
+    border-radius:
+        10px;
+
+
 
     transition:
         background 0.2s ease,
@@ -245,24 +548,158 @@
 .project-links a:hover {
 
     background:
-        rgba(170, 59, 255, 0.25);
+        rgba(170,59,255,0.25);
+
 
     transform:
-        translateY(-3px);
+        translateY(-4px);
+
 
     box-shadow:
-        0 0 15px rgba(170, 59, 255, 0.35);
+        0 0 15px rgba(170,59,255,0.35);
 
 }
 
 
 
+/* =========================
+   LINK TOOLTIP
+========================= */
+
+
+.project-links a:hover::after {
+
+    content:
+        attr(data-name);
+
+
+    position:
+        absolute;
+
+
+    top:
+        -35px;
+
+
+    left:
+        50%;
+
+
+    transform:
+        translateX(-50%);
+
+
+
+    background:
+        #161b22;
+
+
+
+    color:
+        white;
+
+
+
+    padding:
+        5px 10px;
+
+
+
+    border-radius:
+        6px;
+
+
+
+    font-size:
+        12px;
+
+
+
+    white-space:
+        nowrap;
+
+
+
+    border:
+        1px solid #30363d;
+
+}
+
+
+
+/* =========================
+   ICONS
+========================= */
+
+
 .project-links img {
 
-    width: 20px;
+    width:
+        20px;
 
-    height: 20px;
 
-    object-fit: contain;
+    height:
+        20px;
+
+
+    object-fit:
+        contain;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media (max-width: 700px) {
+
+
+    .project-slider {
+
+        flex-direction:
+            column;
+
+    }
+
+
+
+    .project-arrow {
+
+        display:
+            none;
+
+    }
+
+
+
+    .project-title h3 {
+
+        font-size:
+            20px;
+
+    }
+
+
+
+    .project {
+
+        padding:
+            20px;
+
+    }
+
+
+
+    .project-image,
+    .project-video {
+
+        height:
+            150px;
+
+    }
+
 
 }

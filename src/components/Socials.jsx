@@ -6,6 +6,7 @@ import twitchIcon from "../assets/icons/social/twitch.svg"
 import youtubeIcon from "../assets/icons/social/youtube.svg"
 import xIcon from "../assets/icons/social/x.svg"
 import steamIcon from "../assets/icons/social/steam.svg"
+import namemcIcon from "../assets/icons/social/namemc.svg"
 
 function Socials() {
     const socials = [
@@ -56,6 +57,14 @@ function Socials() {
             url: "https://steamcommunity.com/id/nordiumm/",
             icon: steamIcon,
             className: "steam"
+        },
+        {
+            name: "NameMC",
+            username: "Nordiumm",
+            description: "Minecraft profile & skin history.",
+            url: "https://namemc.com/profile/Nordiumm.2",
+            icon: namemcIcon,
+            className: "namemc"
         }
     ];
 

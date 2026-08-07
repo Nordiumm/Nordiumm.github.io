@@ -11,7 +11,7 @@ function Hero() {
 
     const titles = [
         {
-            text: "Minecraft Mod Developer",
+            text: "Minecraft Mod & Plugin Developer",
             className: "minecraft-font"
         },
         {

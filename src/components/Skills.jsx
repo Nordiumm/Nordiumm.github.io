@@ -15,6 +15,7 @@ import luauIcon from "../assets/icons/languages/luau.svg"
 import pythonIcon from "../assets/icons/languages/python.svg";
 import rustIcon from "../assets/icons/languages/rust.svg";
 import typescriptIcon from "../assets/icons/languages/typescript.svg";
+import nodejsIcon from "../assets/icons/languages/nodejs.svg";
 
 // Tools
 
@@ -82,6 +83,11 @@ function Skills() {
             name: "TypeScript",
             className: "typescript",
             icon: typescriptIcon
+        },
+        {
+            name: "Node JS",
+            className: "nodejs",
+            icon: nodejsIcon
         },
     ];
 
