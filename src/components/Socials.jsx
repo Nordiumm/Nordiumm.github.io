@@ -7,6 +7,7 @@ import youtubeIcon from "../assets/icons/social/youtube.svg"
 import xIcon from "../assets/icons/social/x.svg"
 import steamIcon from "../assets/icons/social/steam.svg"
 import namemcIcon from "../assets/icons/social/namemc.svg"
+import discordIcon from "../assets/icons/social/discord.svg"
 
 function Socials() {
     const socials = [
@@ -51,6 +52,14 @@ function Socials() {
             className: "x"
         },
         {
+            name: "Discord",
+            username: "Nordiumm",
+            description: "Discord profile",
+            url: "https://discord.com/users/1194641818097291314",
+            icon: discordIcon,
+            className: "discord"
+        },
+        {
             name: "Steam",
             username: "Nordiumm",
             description: "Games, activity and my gaming journey",
@@ -65,7 +74,7 @@ function Socials() {
             url: "https://namemc.com/profile/Nordiumm.2",
             icon: namemcIcon,
             className: "namemc"
-        }
+        },
     ];
 
     return (
