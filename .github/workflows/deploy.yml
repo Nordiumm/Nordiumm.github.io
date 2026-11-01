@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -36,8 +35,8 @@ jobs:
 
       - name: Build project
         run: |
-	 npm run build
-	 cp dist/index.html dist/404.html
+          npm run build
+          cp dist/index.html dist/404.html
 
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
