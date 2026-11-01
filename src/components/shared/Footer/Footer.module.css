@@ -1,0 +1,47 @@
+.footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 100px auto 0;
+  padding: 28px 24px 24px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.note {
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.note span {
+  color: var(--color-primary);
+}
+
+.message {
+  margin-top: 10px;
+
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 28px;
+  padding-top: 16px;
+
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    margin-top: 70px;
+    padding: 24px 20px 20px;
+  }
+}
