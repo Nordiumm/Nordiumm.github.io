@@ -37,6 +37,10 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         PROJECT / {String(index + 1).padStart(2, '0')}
       </span>
 
+      {project.status && (
+        <span className={styles.projectStatus}>{project.status}</span>
+      )}
+
       <h2 className={styles.projectName}>
         {project.name}
       </h2>
@@ -60,9 +64,11 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         ))}
       </div>
 
-      <span className={styles.viewProject}>
-        View repository <span>↗</span>
-      </span>
+      {project.github && (
+        <span className={styles.viewProject}>
+          View repository <span>↗</span>
+        </span>
+      )}
     </a>
   )
 }
