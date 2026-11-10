@@ -4,16 +4,18 @@ function Hero() {
   return (
     <section className={styles.hero} id="home">
       <div className={styles.content}>
-        <span className={styles.label}>SOFTWARE DEVELOPMENT</span>
+        <span className={styles.label}>SOFTWARE DEVELOPMENT · CURIOSITY · CREATION</span>
 
         <h1>
-          Software developer
-          <span>.</span>
+          Building things<br />
+          and figuring out<br />
+          how they work<span>.</span>
         </h1>
 
         <p className={styles.description}>
-          I enjoy programming, working on different projects
-          and exploring everything that software development has to offer.
+          I'm a software developer who enjoys turning curious ideas into real projects.
+          I spend my time exploring systems, experimenting with code and learning how
+          technology fits together — usually with a few projects in progress.
         </p>
 
         <div className={styles.actions}>
@@ -22,7 +24,7 @@ function Hero() {
           </a>
 
           <a href="/about" className={styles.secondaryButton}>
-            About me
+            A little about me
           </a>
         </div>
       </div>
