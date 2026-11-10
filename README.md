@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Nordiumm — Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal website and developer portfolio, built with React, TypeScript and Vite.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Create a production build with `npm run build`.
+
+## Adding a project
+
+Projects are loaded automatically from Markdown files in the root `projects/` directory. Add a new file such as `projects/my-project.md`:
+
+```md
+---
+name: My project
+description: A short description shown on the project card.
+technologies: [rust, typescript]
+github: https://github.com/username/repository
+status: In development
+order: 4
+---
+
+# My project
+
+Optional notes about the project.
+```
+
+Supported frontmatter fields:
+- `name` and `description` are required.
+- `technologies` must use IDs from `src/data/technologies.ts`.
+- `github` is optional.
+- `status` is optional.
+- `order` controls display order (lower numbers appear first).
+
+The project list is generated at build time, so adding or editing a Markdown file requires a new deployment.
+
+## Updating the Now and Setup pages
+
+Edit `src/data/now.ts` and `src/data/setup.ts`. Their page layouts remain unchanged.
