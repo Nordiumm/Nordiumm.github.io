@@ -1,4 +1,3 @@
-
 import MainLayout from '../layouts/MainLayout'
 import styles from './AboutPage.module.css'
 
@@ -9,33 +8,50 @@ function AboutPage() {
         <header className={styles.header}>
           <span className={styles.label}>A LITTLE ABOUT ME</span>
 
-          <h1 className={styles.title}>A bit about who I am.</h1>
+          <h1 className={styles.title}>Curious by nature. A builder by choice.</h1>
 
           <p className={styles.description}>
-            I'm a curious person who enjoys exploring ideas,
-            learning new things and creating things of my own.
-            Most of my time goes into technology, programming
-            and gaming, but there's more to me than that.
+            I'm someone who likes understanding how things work, taking ideas apart
+            and seeing what I can create from them. Programming gives me a way to
+            turn that curiosity into something real.
           </p>
         </header>
 
         <div className={styles.content}>
           <article className={styles.card}>
-            <h2>Things I enjoy</h2>
+            <h2>What I enjoy creating</h2>
             <p>
-              I enjoy programming, exploring technology and
-              understanding how things work. I also have an
-              interest in cybersecurity and experimenting
-              with different ideas.
+              I like building independent software projects and exploring the
+              engineering behind them. I'm especially interested in systems,
+              architecture, programming languages and the little details that
+              make software work well.
             </p>
           </article>
 
           <article className={styles.card}>
-            <h2>Outside of programming</h2>
+            <h2>Things that interest me</h2>
             <p>
-              Gaming is another thing I enjoy. I like getting
-              immersed in different worlds, discovering games
-              and spending time on things that interest me.
+              Outside of writing code, I enjoy gaming, Linux, technology and
+              cybersecurity. I like following a question down a rabbit hole and
+              learning something unexpected along the way.
+            </p>
+          </article>
+
+          <article className={styles.card}>
+            <h2>How I like to work</h2>
+            <p>
+              I prefer experimenting, learning by building and making things
+              understandable rather than adding complexity for its own sake.
+              Projects are a place to explore ideas and improve as I go.
+            </p>
+          </article>
+
+          <article className={styles.card}>
+            <h2>A work in progress</h2>
+            <p>
+              I'm always exploring new ideas, languages and directions. This
+              website is a small snapshot of what I'm making and what I'm
+              interested in at the moment.
             </p>
           </article>
         </div>
