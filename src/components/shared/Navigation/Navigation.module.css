@@ -19,6 +19,7 @@
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.8px;
+  white-space: nowrap;
 }
 
 .logo span {
@@ -56,6 +57,7 @@
 
   width: 36px;
   height: 36px;
+  flex-shrink: 0;
 
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -74,20 +76,38 @@
   border-color: var(--color-primary);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .navigation {
     padding: 18px 0;
   }
 
   .right {
-    gap: 12px;
+    gap: 10px;
   }
 
   .links {
-    gap: 14px;
+    max-width: 190px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 14px;
   }
 
   .links a {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .navigation {
+    width: min(100% - 32px, 1100px);
+  }
+
+  .links {
+    max-width: 158px;
+    gap: 7px 10px;
+  }
+
+  .links a {
+    font-size: 11px;
   }
 }
