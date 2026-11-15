@@ -74,7 +74,7 @@
   min-height: 48px;
   padding: 0 21px;
   border: 1px solid transparent;
-  border-radius: var(--radius-full);
+  border-radius: 12px;
   font-size: 13px;
   font-weight: 650;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
