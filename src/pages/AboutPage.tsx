@@ -19,7 +19,7 @@ function AboutPage() {
             A lot of my time goes into programming and exploring how
             technology works. I enjoy building my own software, experimenting
             with systems and figuring out how all the pieces fit together.
-            I'm not tied to one particular kind of project — if something
+            I'm not tied to one particular kind of project. If something
             catches my interest, I want to understand it and try it myself.
           </p>
 
