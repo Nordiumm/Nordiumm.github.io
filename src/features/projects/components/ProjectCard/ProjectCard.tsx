@@ -27,49 +27,49 @@ function ProjectCard({ project, index }: ProjectCardProps) {
   )
 
   return (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noreferrer"
-      className={styles.projectCard}
-    >
-      <span className={styles.projectNumber}>
-        PROJECT / {String(index + 1).padStart(2, '0')}
-      </span>
+    <article className={styles.projectCard}>
+      <div className={styles.cardHeader}>
+        <span className={styles.projectNumber}>
+          PROJECT / {String(index + 1).padStart(2, '0')}
+        </span>
 
-      {project.status && (
-        <span className={styles.projectStatus}>{project.status}</span>
-      )}
+        {project.status && (
+          <span className={styles.projectStatus}>{project.status}</span>
+        )}
+      </div>
 
       <h2 className={styles.projectName}>
-        {project.name}
+        {project.github ? (
+          <a href={project.github} target="_blank" rel="noreferrer">
+            {project.name}
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        ) : (
+          project.name
+        )}
       </h2>
 
       <p className={styles.projectDescription}>
         {project.description}
       </p>
 
-      <div className={styles.technologies}>
-        {usedCategories.map((category) => (
-          <div className={styles.technologyRow} key={category.id}>
-            <span className={styles.categoryLabel}>
-              {category.label}
-            </span>
+      {usedCategories.length > 0 && (
+        <div className={styles.technologies}>
+          {usedCategories.map((category) => (
+            <div className={styles.technologyRow} key={category.id}>
+              <span className={styles.categoryLabel}>
+                {category.label}
+              </span>
 
-            <TechnologyList
-              technologyIds={project.technologies}
-              category={category.id}
-            />
-          </div>
-        ))}
-      </div>
-
-      {project.github && (
-        <span className={styles.viewProject}>
-          View repository <span>↗</span>
-        </span>
+              <TechnologyList
+                technologyIds={project.technologies}
+                category={category.id}
+              />
+            </div>
+          ))}
+        </div>
       )}
-    </a>
+    </article>
   )
 }
 
