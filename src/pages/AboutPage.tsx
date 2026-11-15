@@ -6,55 +6,70 @@ function AboutPage() {
     <MainLayout>
       <section className={styles.page}>
         <header className={styles.header}>
-          <span className={styles.label}>A LITTLE ABOUT ME</span>
+          <span className={styles.label}>BEHIND THE KEYBOARD</span>
 
-          <h1 className={styles.title}>Curious by nature. A builder by choice.</h1>
+          <h1 className={styles.title}>
+            A curious mind, a lot of ideas, and a soft spot for building things.
+          </h1>
 
           <p className={styles.description}>
-            I'm someone who likes understanding how things work, taking ideas apart
-            and seeing what I can create from them. Programming gives me a way to
-            turn that curiosity into something real.
+            I'm an independent developer who enjoys making things, understanding
+            how they work and exploring the technology behind them. I tend to
+            follow ideas wherever they lead — from low-level systems to game
+            projects and little experiments.
           </p>
         </header>
 
         <div className={styles.content}>
           <article className={styles.card}>
-            <h2>What I enjoy creating</h2>
+            <span className={styles.cardIndex}>01 / WHAT I BUILD</span>
+            <h2>Software with a purpose.</h2>
             <p>
-              I like building independent software projects and exploring the
-              engineering behind them. I'm especially interested in systems,
-              architecture, programming languages and the little details that
-              make software work well.
+              I like creating projects that feel worth making: software, tools,
+              experiments and game-related ideas. I'm especially drawn to the
+              parts beneath the surface — how systems fit together, how things
+              communicate and how to make an idea actually work.
             </p>
           </article>
 
           <article className={styles.card}>
-            <h2>Things that interest me</h2>
+            <span className={styles.cardIndex}>02 / WHAT I LIKE</span>
+            <h2>More than just code.</h2>
             <p>
-              Outside of writing code, I enjoy gaming, Linux, technology and
-              cybersecurity. I like following a question down a rabbit hole and
-              learning something unexpected along the way.
+              Linux, programming, gaming and cybersecurity are big interests of
+              mine. I enjoy exploring how computers work, tweaking my setup,
+              learning new technologies and getting lost in a good technical
+              rabbit hole.
             </p>
           </article>
 
           <article className={styles.card}>
-            <h2>How I like to work</h2>
+            <span className={styles.cardIndex}>03 / HOW I WORK</span>
+            <h2>Learn by making.</h2>
             <p>
-              I prefer experimenting, learning by building and making things
-              understandable rather than adding complexity for its own sake.
-              Projects are a place to explore ideas and improve as I go.
+              I learn best by experimenting and building things myself. I like
+              understanding why something works instead of blindly copying a
+              solution, and I'm not afraid to take a project apart and try a
+              different approach.
             </p>
           </article>
 
           <article className={styles.card}>
-            <h2>A work in progress</h2>
+            <span className={styles.cardIndex}>04 / A LITTLE PERSONALITY</span>
+            <h2>Technical, curious, and a little creative.</h2>
             <p>
-              I'm always exploring new ideas, languages and directions. This
-              website is a small snapshot of what I'm making and what I'm
-              interested in at the moment.
+              I can spend hours exploring a technical problem, then switch to
+              working on something completely different. I like having room
+              to experiment, make things my own and add a bit of personality
+              to everything I create.
             </p>
           </article>
         </div>
+
+        <footer className={styles.footer}>
+          <span className={styles.footerSparkle}>✧</span>
+          <p>Still learning, still building, always curious.</p>
+        </footer>
       </section>
     </MainLayout>
   )
