@@ -4,8 +4,6 @@ import HomePage from '../pages/HomePage'
 import ProjectsPage from '../pages/ProjectsPage'
 import AboutPage from '../pages/AboutPage'
 import SocialsPage from '../pages/SocialsPage'
-import NowPage from '../pages/NowPage'
-import SetupPage from '../pages/SetupPage'
 
 import BadRequestPage from '../pages/errors/BadRequestPage'
 import UnauthorizedPage from '../pages/errors/UnauthorizedPage'
@@ -24,8 +22,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/now" element={<NowPage />} />
-        <Route path="/setup" element={<SetupPage />} />
         <Route path="/socials" element={<SocialsPage />} />
 
         {/* Error pages */}
