@@ -1,0 +1,65 @@
+.socialCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  
+  color: var(--color-text);
+  text-decoration: none;
+
+  transition: border-color var(--transition-fast);
+}
+
+.socialCard:hover {
+  border-color: var(--color-primary);
+}
+
+.socialCard:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.socialCard[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.socialInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.socialName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.socialUsername {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.socialArrow {
+  margin-left: auto;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

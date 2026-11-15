@@ -1,0 +1,116 @@
+
+.page {
+  width: min(100% - 48px, 1100px);
+  min-height: calc(100vh - 100px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 560px;
+  padding: 60px 0;
+}
+
+.label {
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.title {
+  margin: 24px 0 0;
+
+  color: var(--color-text);
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 650;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.description {
+  max-width: 430px;
+  margin-top: 16px;
+
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.status span:first-child {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 17px;
+
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.primaryButton {
+  background: var(--color-primary);
+  color: #111116;
+}
+
+.primaryButton:hover {
+  background: var(--color-primary-hover);
+}
+
+.secondaryButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.secondaryButton:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .page {
+    min-height: calc(100vh - 80px);
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
