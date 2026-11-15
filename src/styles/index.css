@@ -2,14 +2,34 @@
 @import './variables.css';
 @import './themes.css';
 
-body {
-  font-family: var(--font-primary);
-  background: var(--color-background);
-  color: var(--color-text);
+html {
+  scroll-behavior: smooth;
+}
 
-  transition:
-    background-color var(--transition-normal),
-    color var(--transition-normal);
+body {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-primary);
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(244, 184, 216, 0.22), transparent 34rem),
+    radial-gradient(ellipse at 88% 28%, rgba(190, 174, 255, 0.14), transparent 32rem),
+    var(--color-background);
+  color: var(--color-text);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: '';
+  opacity: 0.45;
+  background-image: radial-gradient(rgba(174, 125, 160, 0.16) 0.7px, transparent 0.7px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
 }
 
 a {
@@ -19,4 +39,10 @@ a {
 
 button {
   border: none;
+  font: inherit;
+}
+
+::selection {
+  color: #3b2034;
+  background: rgba(235, 157, 201, 0.45);
 }
