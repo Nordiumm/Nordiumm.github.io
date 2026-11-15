@@ -1,45 +1,58 @@
 .socials {
-  width: 100%;
-  max-width: 900px;
+  width: min(100% - 48px, 1100px);
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .header {
-  margin-bottom: 40px;
+  max-width: 650px;
+  margin-bottom: 48px;
 }
 
 .eyebrow {
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
 }
 
 .header h1 {
-  margin-top: 14px;
-
+  margin-top: 18px;
   color: var(--color-text);
-  font-size: 38px;
-  font-weight: 650;
-  letter-spacing: -1.2px;
+  font-size: clamp(44px, 6vw, 64px);
+  font-weight: 700;
+  letter-spacing: -2.5px;
 }
 
 .header p {
-  margin-top: 12px;
-
+  max-width: 520px;
+  margin-top: 16px;
   color: var(--color-text-secondary);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
 .socialList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
+  .socials {
+    padding: 64px 0;
+  }
+
+  .header {
+    margin-bottom: 36px;
+  }
+
+  .header h1 {
+    letter-spacing: -1.5px;
+  }
+
   .socialList {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
